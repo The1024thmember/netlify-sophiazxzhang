@@ -1,6 +1,5 @@
 import {Redirect} from 'react-router-dom';
 import { Grid } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
 import { Header } from './header.js'
 import 'react-pro-sidebar/dist/css/styles.css';
 import profile from './profile.jpg' ;
