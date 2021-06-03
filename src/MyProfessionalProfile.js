@@ -1,14 +1,11 @@
-import Button from 'react-bootstrap/Button';
-import {BrowserRouter as Router,Switch,Route,Link,Redirect,useParam } from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Header } from './header.js'
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import Paper from '@material-ui/core/Paper';
 import 'react-pro-sidebar/dist/css/styles.css';
 import profile from './profile.jpg' ;
 import './App.css';
-import React, { Component } from 'react'
+import React from 'react'
 import Typical from 'react-typical'
 
 const useStyles = makeStyles((theme) => ({
@@ -22,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export const My_Professional_Profile = ({toolbarstyle,currentpage,setcurrentpage,Mygarlley,images,ithimage,setithimage}) => {
-  const classes = useStyles();
   const [pagerender,setpagerender] = React.useState('summary');
   if (currentpage==="/"){
 	return <Redirect to="/" />
