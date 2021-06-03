@@ -1,3 +1,167 @@
+.Walk{
+	width:100%;
+	height:250px;
+	position:fixed;
+	bottom:0%;
+}
+.Rou {
+  width: 160;
+  height: 250px;
+  position: relative;
+  display:inline-block;
+  animation: move_rou infinite 20s linear;  
+}
+
+@keyframes move_rou {
+  from {
+    left: 58%;
+	bottom: 0%;
+  }
+  to {
+    left: -56%;
+	bottom: 0%;
+  }
+}
+
+.Cai {
+  width: 150px;
+  height: 250px;
+  position: relative;
+  display:inline-block;
+  animation: move_cai infinite 20s linear;  
+}
+
+@keyframes move_cai {
+  from {
+    left: 57%;
+	bottom: 0%;
+  }
+  to {
+    left: -57%;
+	bottom: 0%;
+  }
+}
+
+.Laoda {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display:inline-block;
+  animation: move_laoda infinite 20s linear;  
+}
+
+@keyframes move_laoda {
+  from {
+    left: 63%;
+	bottom: 0%;
+  }
+  to {
+    left: -51%;
+	bottom: 0%;
+  }
+}
+
+.Laosan {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display:inline-block;
+  animation: move_laosan infinite 20s linear;  
+}
+@keyframes move_laosan {
+  from {
+    left: 64%;
+	bottom: 0%;
+  }
+  to {
+    left: -50%;
+	bottom: 0%;
+  }
+}
+
+.Fei {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display:inline-block;
+  animation: move_fei infinite 20s linear;  
+}
+@keyframes move_fei {
+  from {
+    left: 62%;
+	bottom: 0%;
+  }
+  to {
+    left: -52%;
+	bottom: 0%;
+  }
+}
+.Nao {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display:inline-block;
+  animation: move_nao infinite 20s linear;  
+}
+@keyframes move_nao {
+  from {
+    left: 60%;
+	bottom: 0%;
+  }
+  to {
+    left: -54%;
+	bottom: 0%;
+  }
+}
+
+.cai_prompt {
+	border:3px yellow solid;
+}
+
+
+.Profilelinks {
+	position:relative;
+	top:10%;
+}
+
+.Profilelinks:hover {
+	color:rgb(140,140,140);
+	cursor: pointer; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +200,5 @@
     transform: rotate(360deg);
   }
 }
+
+
