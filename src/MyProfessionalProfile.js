@@ -7,17 +7,6 @@ import profile from './profile.jpg' ;
 import './App.css';
 import React from 'react'
 import Typical from 'react-typical'
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-}));
 export const MyProfessionalProfile = ({toolbarstyle,currentpage,setcurrentpage,Mygarlley,images,ithimage,setithimage}) => {
   const [pagerender,setpagerender] = React.useState('summary');
   if (currentpage==="/"){
