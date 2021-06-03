@@ -1,5 +1,5 @@
 import React from 'react';
-export const My_fancy_world = ({currentpage,setcurrentpage}) => {
+export const Myfancyworld = ({currentpage,setcurrentpage}) => {
   if (currentpage==="/My_fancy_world"){
 	  return (
 		<div>

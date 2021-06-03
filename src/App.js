@@ -1,14 +1,13 @@
 import './App.css';
 import React from 'react'; 
-import Button from 'react-bootstrap/Button';
-import {BrowserRouter as Router,Switch,Route,Link,Redirect,useParam } from 'react-router-dom';
+import {BrowserRouter as Router,Switch,Route,Redirect} from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 import { MyArrowleft, MyArrowright } from './Arrow';
-import { My_Professional_Profile } from './MyProfessionalProfile.js';
-import { My_Jewerly_design } from './MyJewerlyDesign.js';
-import { My_family } from './MyFamily.js';
-import { My_fancy_world } from './MyFancyWorld.js'
-import { My_music } from './MyMusic.js';
+import { MyProfessionalProfile } from './MyProfessionalProfile.js';
+import { MyJewerlydesign } from './MyJewerlyDesign.js';
+import { Myfamily } from './MyFamily.js';
+import { Myfancyworld } from './MyFancyWorld.js'
+import { Mymusic } from './MyMusic.js';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import bg from './sophia_gray.jpg' ;
@@ -29,7 +28,6 @@ const images = [
 function App() {
   const [currentpage,setcurrentpage] = React.useState("/");
   const [ithimage,setithimage] = React.useState(0);
-  const mainpagelinks = ["/","/My_Professional_Profile","/My_Jewerly_design","/My_music","/My_family","/My_fancy_world","/Caiprofile","/Rouprofile","/Naoprofile","/Feiprofile","/Laodaprofile","/Laosanprofile"];
   return <>
   <Router >
 	<Switch>
@@ -43,7 +41,7 @@ function App() {
 		/>
 	  </Route>
 	  <Route path="/My_Professional_Profile">
-		<My_Professional_Profile
+		<MyProfessionalProfile
 		  currentpage={currentpage}
 		  setcurrentpage={setcurrentpage}
 		  Mygarlley={Mygarlley}
@@ -53,25 +51,25 @@ function App() {
 		/>
 	  </Route>
 	  <Route path="/My_Jewerly_design">
-		<My_Jewerly_design
+		<MyJewerlydesign
 		  currentpage={currentpage}
 		  setcurrentpage={setcurrentpage}
 		/>
 	  </Route>
 	  <Route path="/My_music">
-		<My_music
+		<Mymusic
 		  currentpage={currentpage}
 		  setcurrentpage={setcurrentpage}
 		/>
 	  </Route>
 	  <Route path="/My_family">
-		<My_family
+		<Myfamily
 		  currentpage={currentpage}
 		  setcurrentpage={setcurrentpage}
 		/>
 	  </Route>
 	  <Route path="/My_fancy_world">
-		<My_fancy_world
+		<Myfancyworld
 		  currentpage={currentpage}
 		  setcurrentpage={setcurrentpage}
 		/>
@@ -163,6 +161,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 					<span style={caiprompt? {display:'block',position:'relative',top:'0%'} : {display:'none'}}>Hi there!</span>
 				</div>
 				<img src={caiwalk}
+				alt="caiwalk"
 				style={{width: '120px',height: '250px'}}
 				onMouseEnter={()=>{setcaiprompt(true);}}
 				/>
@@ -172,6 +171,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 					<span style={caiprompt? {display:'block',position:'relative',top:'0%'} : {display:'none'}}>Hi there!</span>
 				</div>
 				<img src={rouwalk}
+				alt="rouwalk"
 				style={{width: '130px',height: '250px'}}
 				onMouseEnter={()=>{setcaiprompt(true);}}				
 				/>
@@ -181,6 +181,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 					<span style={caiprompt? {display:'block'} : {display:'none'}}>Hi there!</span>
 				</div>
 				<img src={naowalk}
+				alt="naowalk"
 				style={{width: '60px',height: '30px'}}
 				onMouseEnter={()=>{setcaiprompt(true);}}
 				/>
@@ -190,6 +191,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 					<span style={caiprompt? {display:'block'} : {display:'none'}}>Hi there!</span>
 				</div>
 				<img src={feiwalk}
+				alt="feiwalk"
 				style={{width: '58px',height: '27px'}}
 				onMouseEnter={()=>{setcaiprompt(true);}}				
 				/>
@@ -199,6 +201,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 					<span style={caiprompt? {display:'block'} : {display:'none'}}>Hi there!</span>
 				</div>
 				<img src={laodawalk}
+				alt="laodawalk"
 				style={{width: '50px',height: '25px'}}
 				onMouseEnter={()=>{setcaiprompt(true);}}				
 				/>
@@ -208,6 +211,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 					<span style={caiprompt? {display:'block'} : {display:'none'}}>Hi there!</span>
 				</div>
 				<img src={laosanwalk}
+				alt="naowalk"
 				style={{width: '50px',height: '25px'}}
 				onMouseEnter={()=>{setcaiprompt(true);}}					
 				/>				
@@ -230,7 +234,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 			  onMouseLeave={()=>{setonfoucslink(false);}}		  
 			  onClick={()=>{setcurrentpage(mylink[ithimage])}}
 			  >
-					<img className='mainimage' style={{height:`${displayHeight}`,width:'550px'}}
+					<img className='mainimage' alt="linkimages" style={{height:`${displayHeight}`,width:'550px'}}
 					src={items[ithimage].original} />
 			  </Paper>
 			</Grid>
@@ -252,11 +256,6 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 		</div>
 	</div>
   </>
-}
-
-function Home() {
-	return <>
-	</>
 }
 
 function Caiprofile(){
