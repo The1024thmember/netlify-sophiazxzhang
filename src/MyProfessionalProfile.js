@@ -216,10 +216,10 @@ function Experience() {
 			onClick={()=>{
 				if (experiencePage>1){setexperiencePage(experiencePage-1);}
 				else{setexperiencePage(3);}}}
-			><-</span > {experiencePage} <span className='experiencePagepointer'
+			>(-</span > {experiencePage} <span className='experiencePagepointer'
 			onClick={()=>{if (experiencePage<3){setexperiencePage(experiencePage+1);}
 				else{setexperiencePage(1);}}}
-			>-></span>
+			>-)</span>
 		</div>
 	</>;
 }
@@ -400,10 +400,10 @@ function Achievements() {
 			onClick={()=>{
 				if (achievementpage>1){setachievementpage(achievementpage-1);}
 				else{setachievementpage(4);}}}
-			><-</span > {achievementpage} <span className='achievementpagepointer'
+			>(-</span > {achievementpage} <span className='achievementpagepointer'
 			onClick={()=>{if (achievementpage<3){setachievementpage(achievementpage+1);}
 				else{setachievementpage(4);}}}
-			>-></span>
+			>-)</span>
 		</div>
 	</>;
 }
