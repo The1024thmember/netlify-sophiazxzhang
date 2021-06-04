@@ -129,8 +129,18 @@
 	cursor: pointer; 
 }
 
-
-
+.experiencePagepointer:hover {
+	cursor: pointer; 
+	background-color:rgb(213,216,216);
+}
+.projectshownpointer:hover{
+	cursor: pointer; 
+	color:rgb(53,108,143);
+}
+.achievementpagepointer:hover{
+	cursor: pointer; 
+	background-color:rgb(213,216,216);
+}
 
 
 
