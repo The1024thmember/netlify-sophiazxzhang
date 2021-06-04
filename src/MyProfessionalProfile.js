@@ -1,18 +1,13 @@
-import Button from 'react-bootstrap/Button';
-import {BrowserRouter as Router,Switch,Route,Link,Redirect,useParam } from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import { Grid } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
 import { Header } from './header.js'
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import Paper from '@material-ui/core/Paper';
 import 'react-pro-sidebar/dist/css/styles.css';
 import profile from './profile.jpg' ;
 import './App.css';
-import React, { Component } from 'react';
+import React from 'react';
 import Typical from 'react-typical';
 import typing from './keyboard.gif';
 import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
 import essay from './essay.jpg';
 import innovationcup from './innovation_cup.jpg';
 import patentAutomatic from './patent_automatic.jpg';
@@ -24,18 +19,7 @@ import scholoarship from './scholoarship.jpg';
 import svm from './SVM_thirdprize.jpg';
 import technology from './technology.jpg';
 import vicepresident from './vice_president.jpg';
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-}));
 export const MyProfessionalProfile = ({toolbarstyle,currentpage,setcurrentpage,Mygarlley,images,ithimage,setithimage}) => {
-  const classes = useStyles();
   const [pagerender,setpagerender] = React.useState('summary');
   if (currentpage==="/"){
 	return <Redirect to="/" />
