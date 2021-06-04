@@ -144,7 +144,7 @@ function Experience() {
 						<li>Develop customized applications under the word bench framework (phone call categorization, enrich phrase library, troubleshooting).</li>
 						<li>Analyse hundreds of phone calls (extract mainly information for evaluating agent performance, gain insights in improving clients¡¯ business). 
 						</li>
-						<li>Create a report analyzing <a style={{fontWeight:'bold'}} href="https://app.powerbi.com/links/04yLpv6jt1?ctid=4eaed389-575d-431d-8099-13c4566eed90&pbi_source=linkShare">¡°customer experience¡± </a>using PowerBI.
+						<li>Create a report analyzing <a style={{fontWeight:'bold'}} href="https://app.powerbi.com/links/04yLpv6jt1?ctid=4eaed389-575d-431d-8099-13c4566eed90&pbi_source=linkShare">'customer experience' </a>using PowerBI.
 						</li>
 						<li>Build slides to display outcomes for clients (generate visuals based on clients' data, formatting).
 						</li>					
@@ -216,10 +216,10 @@ function Experience() {
 			onClick={()=>{
 				if (experiencePage>1){setexperiencePage(experiencePage-1);}
 				else{setexperiencePage(3);}}}
-			>?</span > {experiencePage} <span className='experiencePagepointer'
+			><-</span > {experiencePage} <span className='experiencePagepointer'
 			onClick={()=>{if (experiencePage<3){setexperiencePage(experiencePage+1);}
 				else{setexperiencePage(1);}}}
-			>?</span>
+			>-></span>
 		</div>
 	</>;
 }
@@ -295,7 +295,7 @@ function Achievements() {
 					<Card>
 						<Card.Img variant="top" style={{height:'60%',width:'60%', border: '7px gold double'}} alt="image" src={patentAutomatic} />
 						<Card.Body>
-						  <Card.Title><h2 >¡¶Automatic glass cleaning robot¡·Patent</h2></Card.Title>
+						  <Card.Title><h2 >'Automatic glass cleaning robot' Patent</h2></Card.Title>
 						</Card.Body>
 					</Card>
 				</Grid>
@@ -303,7 +303,7 @@ function Achievements() {
 					<Card>
 						<Card.Img style={{height:'60%',width:'60%', border: '7px gold double'}} variant="top" alt="image" src={patentprinter} />
 						<Card.Body>
-						  <Card.Title><h2 >¡¶Printer¡·Patent</h2></Card.Title>
+						  <Card.Title><h2 >'Printe' Patent</h2></Card.Title>
 						</Card.Body>
 					</Card>
 				</Grid>
@@ -311,7 +311,7 @@ function Achievements() {
 					<Card>
 						<Card.Img style={{height:'60%',width:'60%', border: '7px gold double'}} variant="top" alt="image" src={essay} />
 						<Card.Body>
-						  <Card.Title><h2 >¡¶Automatic following robot based on camera¡· publication</h2></Card.Title>
+						  <Card.Title><h2 >'Automatic following robot based on camera' publication</h2></Card.Title>
 						</Card.Body>
 					</Card>
 				</Grid>
@@ -400,10 +400,10 @@ function Achievements() {
 			onClick={()=>{
 				if (achievementpage>1){setachievementpage(achievementpage-1);}
 				else{setachievementpage(4);}}}
-			>?</span > {achievementpage} <span className='achievementpagepointer'
+			><-</span > {achievementpage} <span className='achievementpagepointer'
 			onClick={()=>{if (achievementpage<3){setachievementpage(achievementpage+1);}
 				else{setachievementpage(4);}}}
-			>?</span>
+			>-></span>
 		</div>
 	</>;
 }
