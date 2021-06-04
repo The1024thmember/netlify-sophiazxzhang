@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
 }));
-export const My_Professional_Profile = ({toolbarstyle,currentpage,setcurrentpage,Mygarlley,images,ithimage,setithimage}) => {
+export const MyProfessionalProfile = ({toolbarstyle,currentpage,setcurrentpage,Mygarlley,images,ithimage,setithimage}) => {
   const classes = useStyles();
   const [pagerender,setpagerender] = React.useState('summary');
   if (currentpage==="/"){
