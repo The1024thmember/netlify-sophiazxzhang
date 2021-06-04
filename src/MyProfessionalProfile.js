@@ -142,7 +142,7 @@ function Experience() {
 					</Grid>
 					<ul style={{color:'rgb(72,72,72)'}}>
 						<li>Develop customized applications under the word bench framework (phone call categorization, enrich phrase library, troubleshooting).</li>
-						<li>Analyse hundreds of phone calls (extract mainly information for evaluating agent performance, gain insights in improving clients¡¯ business). 
+						<li>Analyse hundreds of phone calls (extract mainly information for evaluating agent performance, gain insights in improving clients' business). 
 						</li>
 						<li>Create a report analyzing <a style={{fontWeight:'bold'}} href="https://app.powerbi.com/links/04yLpv6jt1?ctid=4eaed389-575d-431d-8099-13c4566eed90&pbi_source=linkShare">'customer experience' </a>using PowerBI.
 						</li>
