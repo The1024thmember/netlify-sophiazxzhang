@@ -10,6 +10,7 @@ import { Myfancyworld } from './MyFancyWorld.js'
 import { Mymusic } from './MyMusic.js';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+//import bg from './sophia_gray_wihitebackground.jpg' ;
 import bg from './sophia_gray.jpg' ;
 import rouwalk from './rou_walk.gif';
 import caiwalk from './cai_walk.gif';
@@ -20,12 +21,13 @@ import feiwalk from './feiwalk2.gif';
 import carrot from './carrot.png';
 import sun from './sun.jpg';
 import grape from './grape.jpg';
+import meworking from './me_working2.png'
 const images = [
-	{original: 'https://picsum.photos/id/1018/1000/600/'},
-	{original: 'https://picsum.photos/id/1015/1000/600/'},
-	{original: 'https://picsum.photos/id/1019/1000/600/'},
-	{orginal: ''},
-	{orginal: ''}
+	meworking,
+	'https://picsum.photos/id/1015/1000/600/',
+	'https://picsum.photos/id/1019/1000/600/',
+	'',
+	''
 ];
 
 function App() {
@@ -218,7 +220,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 				<div style={{position:'relative', top:'-30%', width: '30px',height: '30px'}}>
 					<span style={naoprompt? {display:'block'} : {display:'none'}}>
 						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(229,241,214)',padding:'20%',borderRadius:'20%',border:'4px dotted rgb(181,203,91)'}}>
-							<img style={{width: '120%',height: '120%'}} alt="carrot" src={carrot}/>
+							<img style={{width: '120%',height: '120%'}} src={carrot}/>
 						</div>
 						<div style={{position:'relative', left:'70%', height:'5%',width:'5%',backgroundColor:'rgb(229,241,214)',padding:'10%',borderRadius:'50%',border:'2px dotted rgb(181,203,91)'}}></div>
 					</span>
@@ -233,7 +235,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 				<div style={{position:'relative', top:'-60%', width: '30px',height: '30px'}}>
 					<span style={feiprompt? {display:'block'} : {display:'none'}}>
 						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(229,241,214)',padding:'20%',borderRadius:'20%',border:'4px dotted rgb(181,203,91)'}}>
-							<img style={{width: '120%',height: '120%'}} alt="sun" src={sun}/>
+							<img style={{width: '120%',height: '120%'}} src={sun}/>
 						</div>
 						<div style={{position:'relative', left:'70%', height:'5%',width:'5%',backgroundColor:'rgb(229,241,214)',padding:'10%',borderRadius:'50%',border:'2px dotted rgb(181,203,91)'}}></div>					
 					</span>
@@ -248,7 +250,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 				<div style={{position:'relative', top:'-70%',width: '30px',height: '25px'}}>
 					<span style={laodaprompt? {display:'block'} : {display:'none'}}>
 						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(229,241,214)',padding:'20%',borderRadius:'20%',border:'4px dotted rgb(181,203,91)'}}>
-							<img style={{width: '100%',height: '80%'}} alt="grape" src={grape}/>
+							<img style={{width: '100%',height: '80%'}} src={grape}/>
 						</div>
 						<div style={{position:'relative', left:'70%', height:'5%',width:'5%',backgroundColor:'rgb(229,241,214)',padding:'10%',borderRadius:'50%',border:'2px dotted rgb(181,203,91)'}}></div>
 					</span>
@@ -292,8 +294,8 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 			  onMouseLeave={()=>{setonfoucslink(false);}}		  
 			  onClick={()=>{setcurrentpage(mylink[ithimage])}}
 			  >
-					<img className='mainimage' alt="linkimages" style={{height:`${displayHeight}`,width:'550px'}}
-					src={items[ithimage].original} />
+					<img className='mainimage' alt="linkimages" style={{height:`${displayHeight}`,width:'550px',border:'7px black double'}}
+					src={items[ithimage]} />
 			  </Paper>
 			</Grid>
 			<Grid item xs={2}>
@@ -306,9 +308,11 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 			 
 			</Grid>
 			<Grid item xs={12}>
-				<div style={{position:'relative',left:'43%',height:'20%',width:'20%'}}>
-					<h4>{titles[ithimage]}</h4>
+				<div style={{ position:'relative',left:'33%',height:'15%',width:'1%', borderRadius:'50%',border:'5px black double', display:'inline-block'}}></div>
+				<div style={{position:'relative',left:'38%',height:'50%',width:'20%',borderRadius:'10%',paddingBottom:'5px',borderBottom:'5px black double',borderTop:'5px black double',display:'inline-block',textAlign:'center'}}>
+					<span style={{fontWeight:'bold'}}>{titles[ithimage]}</span>
 				</div>
+				<div style={{ position:'relative',left:'43%',height:'15%',width:'1%', borderRadius:'50%',border:'5px black double', display:'inline-block'}}></div>
 			</Grid>
 		  </Grid>
 		</div>
