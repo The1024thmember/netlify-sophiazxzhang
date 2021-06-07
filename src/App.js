@@ -17,6 +17,9 @@ import laodawalk from './laodawalk.gif';
 import laosanwalk from './laosanwalk.gif';
 import naowalk from './naowalk.gif';
 import feiwalk from './feiwalk2.gif';
+import carrot from './carrot.png';
+import sun from './sun.jpg';
+import grape from './grape.jpg';
 const images = [
 	{original: 'https://picsum.photos/id/1018/1000/600/'},
 	{original: 'https://picsum.photos/id/1015/1000/600/'},
@@ -125,10 +128,35 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 				};
   const displayHeight='360px';
   const [caiprompt,setcaiprompt] = React.useState(false);
+  const [rouprompt,setrouprompt] = React.useState(false);
+  const [naoprompt,setnaoprompt] = React.useState(false);
+  const [feiprompt,setfeiprompt] = React.useState(false);
+  const [laodaprompt,setlaodaprompt] = React.useState(false);
+  const [laosanprompt,setlaosanprompt] = React.useState(false);
   React.useEffect(()=>{
 	 const timer = setInterval(() => setcaiprompt(false), 3000); 
 	 return () => clearInterval(timer);
   },[caiprompt])
+  React.useEffect(()=>{
+	 const timer = setInterval(() => setrouprompt(false), 3000); 
+	 return () => clearInterval(timer);
+  },[rouprompt])
+  React.useEffect(()=>{
+	 const timer = setInterval(() => setnaoprompt(false), 3000); 
+	 return () => clearInterval(timer);
+  },[naoprompt])
+  React.useEffect(()=>{
+	 const timer = setInterval(() => setfeiprompt(false), 3000); 
+	 return () => clearInterval(timer);
+  },[feiprompt])
+  React.useEffect(()=>{
+	 const timer = setInterval(() => setlaodaprompt(false), 3000); 
+	 return () => clearInterval(timer);
+  },[laodaprompt])
+  React.useEffect(()=>{
+	 const timer = setInterval(() => setlaosanprompt(false), 3000); 
+	 return () => clearInterval(timer);
+  },[laosanprompt])
   console.log('currentpage: '+currentpage);
   if (currentpage==="/My_Professional_Profile") {
 		return <Redirect to="/My_Professional_Profile" />
@@ -157,8 +185,13 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 	<div style={{backgroundImage:`url(${bg})`, height:`${windowheight}`,width:`${windowwidth}`}}>
 		<div className="Walk" >
 			<div className="Cai">
-				<div style={{position:'relative', top:'-70%',width: '30px',height: '50px',display:'inline-block',background:'red'}}>
-					<span style={caiprompt? {display:'block',position:'relative',top:'0%'} : {display:'none'}}>Hi there!</span>
+				<div style={{position:'relative', top:'-70%',width: '30px',height: '50px',display:'inline-block'}}>
+					<span style={caiprompt? {display:'block',position:'relative',top:'0%',left:'-50%'} : {display:'none'}}>
+						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(247,238,164)',padding:'40%',borderRadius:'60%',border:'5px dotted rgb(246,172,163)'}}>
+							Hi there!
+						</div>
+						<div style={{position:'relative', left:'170%', height:'10%',width:'10%',backgroundColor:'rgb(247,238,164)',padding:'10%',borderRadius:'50%',border:'3px dotted rgb(246,172,163)'}}></div>
+					</span>
 				</div>
 				<img src={caiwalk}
 				alt="caiwalk"
@@ -167,53 +200,78 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 				/>
 			</div>
 			<div className="Rou" >
-				<div style={{position:'relative', top:'-50%',width: '30px',height: '50px',display:'inline-block',background:'red'}}>
-					<span style={caiprompt? {display:'block',position:'relative',top:'0%'} : {display:'none'}}>Hi there!</span>
+				<div style={{position:'relative', top:'-50%',width: '30px',height: '50px',display:'inline-block'}}>
+					<span style={rouprompt? {display:'block',position:'relative',top:'0%'} : {display:'none'}}>
+						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(226,254,255)',padding:'40%',borderRadius:'40%',border:'5px dotted rgb(246,172,163)'}}>
+							sophia :)
+						</div>
+						<div style={{position:'relative', left:'170%', height:'10%',width:'10%',backgroundColor:'rgb(226,254,255)',padding:'10%',borderRadius:'50%',border:'3px dotted rgb(246,172,163)'}}></div>
+					</span>
 				</div>
 				<img src={rouwalk}
 				alt="rouwalk"
 				style={{width: '130px',height: '250px'}}
-				onMouseEnter={()=>{setcaiprompt(true);}}				
+				onMouseEnter={()=>{setrouprompt(true);}}				
 				/>
 			</div>
 			<div className="Nao" >
-				<div style={{position:'relative', top:'-20%', width: '30px',height: '30px',background:'red'}}>
-					<span style={caiprompt? {display:'block'} : {display:'none'}}>Hi there!</span>
+				<div style={{position:'relative', top:'-30%', width: '30px',height: '30px'}}>
+					<span style={naoprompt? {display:'block'} : {display:'none'}}>
+						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(229,241,214)',padding:'20%',borderRadius:'20%',border:'4px dotted rgb(181,203,91)'}}>
+							<img style={{width: '120%',height: '120%'}} src={carrot}/>
+						</div>
+						<div style={{position:'relative', left:'70%', height:'5%',width:'5%',backgroundColor:'rgb(229,241,214)',padding:'10%',borderRadius:'50%',border:'2px dotted rgb(181,203,91)'}}></div>
+					</span>
 				</div>
 				<img src={naowalk}
 				alt="naowalk"
 				style={{width: '60px',height: '30px'}}
-				onMouseEnter={()=>{setcaiprompt(true);}}
+				onMouseEnter={()=>{setnaoprompt(true);}}
 				/>
 			</div>
 			<div className="Fei" >
-				<div style={{position:'relative', top:'-20%', width: '30px',height: '30px',background:'red'}}>
-					<span style={caiprompt? {display:'block'} : {display:'none'}}>Hi there!</span>
+				<div style={{position:'relative', top:'-60%', width: '30px',height: '30px'}}>
+					<span style={feiprompt? {display:'block'} : {display:'none'}}>
+						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(229,241,214)',padding:'20%',borderRadius:'20%',border:'4px dotted rgb(181,203,91)'}}>
+							<img style={{width: '120%',height: '120%'}} src={sun}/>
+						</div>
+						<div style={{position:'relative', left:'70%', height:'5%',width:'5%',backgroundColor:'rgb(229,241,214)',padding:'10%',borderRadius:'50%',border:'2px dotted rgb(181,203,91)'}}></div>					
+					</span>
 				</div>
 				<img src={feiwalk}
 				alt="feiwalk"
 				style={{width: '58px',height: '27px'}}
-				onMouseEnter={()=>{setcaiprompt(true);}}				
+				onMouseEnter={()=>{setfeiprompt(true);}}				
 				/>
 			</div>
 			<div className="Laoda" >
-				<div style={{position:'relative', top:'-20%',width: '30px',height: '30px',background:'red'}}>
-					<span style={caiprompt? {display:'block'} : {display:'none'}}>Hi there!</span>
+				<div style={{position:'relative', top:'-70%',width: '30px',height: '25px'}}>
+					<span style={laodaprompt? {display:'block'} : {display:'none'}}>
+						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(229,241,214)',padding:'20%',borderRadius:'20%',border:'4px dotted rgb(181,203,91)'}}>
+							<img style={{width: '100%',height: '80%'}} src={grape}/>
+						</div>
+						<div style={{position:'relative', left:'70%', height:'5%',width:'5%',backgroundColor:'rgb(229,241,214)',padding:'10%',borderRadius:'50%',border:'2px dotted rgb(181,203,91)'}}></div>
+					</span>
 				</div>
 				<img src={laodawalk}
 				alt="laodawalk"
 				style={{width: '50px',height: '25px'}}
-				onMouseEnter={()=>{setcaiprompt(true);}}				
+				onMouseEnter={()=>{setlaodaprompt(true);}}				
 				/>
 			</div>
 			<div className="Laosan" >
-				<div style={{position:'relative', top:'-20%',width: '30px',height: '30px',background:'red'}}>
-					<span style={caiprompt? {display:'block'} : {display:'none'}}>Hi there!</span>
+				<div style={{position:'relative', top:'-10%',width: '15px',height: '30px'}}>
+					<span style={laosanprompt? {display:'block'} : {display:'none'}}>
+						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(229,241,214)',padding:'20%',borderRadius:'20%',border:'4px dotted rgb(181,203,91)',fontWeight:'bold'}}>
+							?
+						</div>
+						<div style={{position:'relative', left:'70%', height:'5%',width:'5%',backgroundColor:'rgb(229,241,214)',padding:'10%',borderRadius:'50%',border:'2px dotted rgb(181,203,91)'}}></div>
+					</span>
 				</div>
 				<img src={laosanwalk}
 				alt="naowalk"
 				style={{width: '50px',height: '25px'}}
-				onMouseEnter={()=>{setcaiprompt(true);}}					
+				onMouseEnter={()=>{setlaosanprompt(true);}}					
 				/>				
 			</div>
 		</div>
@@ -248,7 +306,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 			 
 			</Grid>
 			<Grid item xs={12}>
-				<div style={{position:'relative',left:'43%',height:'30px',width:'100px',backgroundColor:'pink'}}>
+				<div style={{position:'relative',left:'43%',height:'20%',width:'20%'}}>
 					<h4>{titles[ithimage]}</h4>
 				</div>
 			</Grid>
