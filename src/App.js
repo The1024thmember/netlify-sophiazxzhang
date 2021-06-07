@@ -220,7 +220,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 				<div style={{position:'relative', top:'-30%', width: '30px',height: '30px'}}>
 					<span style={naoprompt? {display:'block'} : {display:'none'}}>
 						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(229,241,214)',padding:'20%',borderRadius:'20%',border:'4px dotted rgb(181,203,91)'}}>
-							<img style={{width: '120%',height: '120%'}} src={carrot}/>
+							<img style={{width: '120%',height: '120%'}} alt='carrot' src={carrot}/>
 						</div>
 						<div style={{position:'relative', left:'70%', height:'5%',width:'5%',backgroundColor:'rgb(229,241,214)',padding:'10%',borderRadius:'50%',border:'2px dotted rgb(181,203,91)'}}></div>
 					</span>
@@ -235,7 +235,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 				<div style={{position:'relative', top:'-60%', width: '30px',height: '30px'}}>
 					<span style={feiprompt? {display:'block'} : {display:'none'}}>
 						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(229,241,214)',padding:'20%',borderRadius:'20%',border:'4px dotted rgb(181,203,91)'}}>
-							<img style={{width: '120%',height: '120%'}} src={sun}/>
+							<img style={{width: '120%',height: '120%'}}  alt='sun' src={sun}/>
 						</div>
 						<div style={{position:'relative', left:'70%', height:'5%',width:'5%',backgroundColor:'rgb(229,241,214)',padding:'10%',borderRadius:'50%',border:'2px dotted rgb(181,203,91)'}}></div>					
 					</span>
@@ -250,7 +250,7 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 				<div style={{position:'relative', top:'-70%',width: '30px',height: '25px'}}>
 					<span style={laodaprompt? {display:'block'} : {display:'none'}}>
 						<div style={{height:'100%',width:'100%',backgroundColor:'rgb(229,241,214)',padding:'20%',borderRadius:'20%',border:'4px dotted rgb(181,203,91)'}}>
-							<img style={{width: '100%',height: '80%'}} src={grape}/>
+							<img style={{width: '100%',height: '80%'}} alt='grape' src={grape}/>
 						</div>
 						<div style={{position:'relative', left:'70%', height:'5%',width:'5%',backgroundColor:'rgb(229,241,214)',padding:'10%',borderRadius:'50%',border:'2px dotted rgb(181,203,91)'}}></div>
 					</span>
