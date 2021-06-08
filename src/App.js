@@ -10,8 +10,8 @@ import { Myfancyworld } from './MyFancyWorld.js'
 import { Mymusic } from './MyMusic.js';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-//import bg from './sophia_gray_wihitebackground.jpg' ;
-import bg from './sophia_gray.jpg' ;
+import bg from './sophia_gray_wihitebackground.jpg' ;
+//import bg from './sophia_gray.jpg' ;
 import rouwalk from './rou_walk.gif';
 import caiwalk from './cai_walk.gif';
 import laodawalk from './laodawalk.gif';
