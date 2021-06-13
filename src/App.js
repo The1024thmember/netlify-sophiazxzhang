@@ -9,6 +9,7 @@ import { Myfamily } from './MyFamily.js';
 import { Myfancyworld } from './MyFancyWorld.js'
 import { Mymusic } from './MyMusic.js';
 import { makeStyles } from '@material-ui/core/styles';
+import { Cloud1, Cloud2, Cloud3, Myband } from './music_band.js';
 import Paper from '@material-ui/core/Paper';
 import bg from './sophia_gray_wihitebackground.jpg' ;
 //import bg from './sophia_gray.jpg' ;
@@ -278,6 +279,10 @@ function Mygarlley({items,currentpage,setcurrentpage,ithimage,setithimage}){
 				/>				
 			</div>
 		</div>
+		<Cloud1 />
+		<Cloud2 />
+		<Cloud3 />
+		<Myband />
 		<div className={classes.root}
 		style={{block:'display',width:'900px',position:'relative',top:'150px', left:'400px'}}>
 		  <Grid container spacing={2}>
