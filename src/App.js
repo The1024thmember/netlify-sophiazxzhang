@@ -23,13 +23,14 @@ import feiwalk from './feiwalk2.gif';
 import carrot from './carrot.png';
 import sun from './sun.jpg';
 import grape from './grape.jpg';
-import meworking from './me_working2.png'
+import meworking from './me_working2.png';
+import workingonit from './workingonit.gif';
 const images = [
 	meworking,
-	'https://picsum.photos/id/1015/1000/600/',
-	'https://picsum.photos/id/1019/1000/600/',
-	'',
-	''
+	workingonit,
+	workingonit,
+	workingonit,
+	workingonit
 ];
 
 function App() {
