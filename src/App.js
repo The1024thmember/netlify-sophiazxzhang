@@ -7,7 +7,6 @@ import { Myfamily } from './Pages/MyFamily';
 import { Myfancyworld } from './Pages/MyFancyWorld'
 import { Mymusic } from './Pages/MyMusic';
 import { Mygarlley } from './Pages/Mygarlley';
-import bg from './Images/sophia_gray_wihitebackground.jpg' ;
 //something new
 import meworking from './Images/me_working2.png';
 import workingonit from './Images/workingonit.gif';
