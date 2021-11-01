@@ -1,15 +1,13 @@
 import './App.css';
 import React from 'react'; 
-import {BrowserRouter as Router,Switch,Route,Redirect} from 'react-router-dom';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import { MyProfessionalProfile } from './Pages/MyProfessionalProfile';
 import { MyJewerlydesign } from './Pages/MyJewerlyDesign';
 import { Myfamily } from './Pages/MyFamily';
 import { Myfancyworld } from './Pages/MyFancyWorld'
 import { Mymusic } from './Pages/MyMusic';
 import { Mygarlley } from './Pages/Mygarlley';
-import { makeStyles } from '@material-ui/core/styles';
 import bg from './Images/sophia_gray_wihitebackground.jpg' ;
-//import bg from './sophia_gray.jpg' ;
 //something new
 import meworking from './Images/me_working2.png';
 import workingonit from './Images/workingonit.gif';
