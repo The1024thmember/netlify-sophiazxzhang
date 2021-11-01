@@ -32,8 +32,8 @@ export  const Mygarlley = ({items,currentpage,setcurrentpage,ithimage,setithimag
     const [onfoucslink, setonfoucslink] = React.useState(false);
     const mylink=["/My_Professional_Profile","/My_Jewerly_design","/My_music","/My_family","/My_fancy_world"];
     const classes = useStyles();
-    const windowheight='777px';
-    const windowwidth='1600px';
+    const windowheight='800px';
+    const windowwidth='1700px';
     const arrowrightclick=()=>{
         if(items.length-1>ithimage){setithimage(ithimage+1)}
         else{setithimage(0)}
