@@ -1,24 +1,24 @@
 import {Redirect} from 'react-router-dom';
 import { Grid } from '@material-ui/core';
-import { Header } from './header.js'
+import { Header } from '../Components/header.js'
 import 'react-pro-sidebar/dist/css/styles.css';
-import profile from './profile.jpg' ;
-import './App.css';
+import profile from '../Images/profile.jpg' ;
+import '../App.css';
 import React from 'react';
 import Typical from 'react-typical';
-import typing from './keyboard.gif';
+import typing from '../Images/keyboard.gif';
 import Card from 'react-bootstrap/Card';
-import essay from './essay.jpg';
-import innovationcup from './innovation_cup.jpg';
-import patentAutomatic from './patent_automatic.jpg';
-import patentprinter from './patent_printer.jpg';
-import presentation from './presentation.jpg';
-import robot from './robot_design.jpg';
-import scholoarship2018 from './scholoarship2018.jpg';
-import scholoarship from './scholoarship.jpg';
-import svm from './SVM_thirdprize.jpg';
-import technology from './technology.jpg';
-import vicepresident from './vice_president.jpg';
+import essay from '../Images/essay.jpg';
+import innovationcup from '../Images/innovation_cup.jpg';
+import patentAutomatic from '../Images/patent_automatic.jpg';
+import patentprinter from '../Images/patent_printer.jpg';
+import presentation from '../Images/presentation.jpg';
+import robot from '../Images/robot_design.jpg';
+import scholoarship2018 from '../Images/scholoarship2018.jpg';
+import scholoarship from '../Images/scholoarship.jpg';
+import svm from '../Images/SVM_thirdprize.jpg';
+import technology from '../Images/technology.jpg';
+import vicepresident from '../Images/vice_president.jpg';
 export const MyProfessionalProfile = ({toolbarstyle,currentpage,setcurrentpage,Mygarlley,images,ithimage,setithimage}) => {
   const [pagerender,setpagerender] = React.useState('summary');
   if (currentpage==="/"){
